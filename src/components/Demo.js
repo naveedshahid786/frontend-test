@@ -8,7 +8,7 @@ const Demo = () => {
     const { response, error } = useAxios("https://headless-cms-backend.herokuapp.com/demos")
 
     const handleSubmit = (name, email) => {
-        Axios.post("http://localhost:1337/requests", {
+        Axios.post("https://headless-cms-backend.herokuapp.com/requests", {
             name, email
         }).then((res) => console.log(res))
         .catch((er) => console.log(er))
