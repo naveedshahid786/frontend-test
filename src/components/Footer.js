@@ -10,7 +10,7 @@ const Footer = () => {
               <p>You can contact me on naveedshahid91@gmail.com</p>
             </div>
             <div className="col-md-6 mb-md-0 mb-3">
-              <h5 className="text-uppercase font-weight-bold">Online Shopping Store</h5>
+              <h5 className="text-uppercase font-weight-bold">Headless CMS</h5>
               <p>Built with 💕 by <a href="https://github.com/naveedshahid786"><span className="text-success">Naveed Shahid</span> </a>© 2020 Copyright</p>
             </div>
           </div>
