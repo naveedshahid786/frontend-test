@@ -4,10 +4,8 @@ import useAxios from "../Hooks/useAxios"
 import Form from "./Form"
 import Axios from 'axios';
 
-let backend = "http://localhost:1337/"
-
 const Demo = () => {
-    const { response, error } = useAxios("http://localhost:1337/demos")
+    const { response, error } = useAxios("https://headless-cms-backend.herokuapp.com/demos")
 
     const handleSubmit = (name, email) => {
         Axios.post("http://localhost:1337/requests", {
@@ -23,7 +21,7 @@ const Demo = () => {
                 {response ? <p>{response[0].description}</p> : null}
             </div>
             <div className="image-demo">
-                {response ? <img style={{ width: "100%" }} src={"http://localhost:1337" + response[0].media.formats.large.url}></img> : null}
+                {response ? <img style={{ width: "100%" }} src={"https://headless-cms-backend.herokuapp.com" + response[0].media.formats.large.url}></img> : null}
             </div>
             <div className="form-demo">
                 <Form submit={handleSubmit}/>
