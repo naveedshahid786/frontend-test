@@ -7,4 +7,5 @@ install:
     - yarn 
 
 script:
-    - yarn build
+    - yarn upgrade
+    - yarn run build
